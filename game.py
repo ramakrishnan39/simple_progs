@@ -35,6 +35,6 @@ print(v_names[comp_input] + " " + game_list[comp_input])
 if user_input==comp_input:
   print("Match ended in Draw")
 elif (user_input,comp_input) in [(0,1),(1,2),(2,0)]:
-  print("Computer won")
+  print("You lost!! :( Try again buddy for your luck.")
 else:
-  print("You have won the game ! Hurray !")
+  print("Hurray ! You won the game!")
