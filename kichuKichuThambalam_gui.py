@@ -1,20 +1,22 @@
 import random
 import tkinter as tk
 
+BG_COLOR = "#ffc93c"
 m = tk.Tk()
 m.title("Kichu Kichu Thambalam")
 m.geometry('640x480')
+m.config(bg=BG_COLOR)
 
 all_plots = []
 str_plots = ""
 
-l1 = tk.Label(text="Tell me the number of Sand plots (should be 5 to 13) ")
+l1 = tk.Label(text="Tell me the number of Sand plots (should be 5 to 13) ", bg = BG_COLOR)
 t1 = tk.Entry()
-l2 = tk.Label(text="Guess where the star will be ")
-l3 = tk.Label()
-l4 = tk.Label()
-l5 = tk.Label()
-t2 = tk.Entry()
+l2 = tk.Label(text="Guess where the star will be ", bg = BG_COLOR)
+l3 = tk.Label(bg = BG_COLOR)
+l4 = tk.Label(bg = BG_COLOR)
+l5 = tk.Label(bg = BG_COLOR)
+t2 = tk.Entry(bg = BG_COLOR)
 
 msg = tk.Message()
 p_flag = "y"
