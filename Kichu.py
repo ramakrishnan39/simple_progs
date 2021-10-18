@@ -36,7 +36,8 @@ def guess():
 
 
 def start_game():
-    global str_plots, plots
+    global str_plots , all_plots ,plots
+    all_plots = []
     try:
         plots = int(input("Tell me how many sand parts to be included (between 5 to 13) : "))
     except ValueError:
@@ -60,7 +61,7 @@ def ask_choice():
         if p_flag.lower() == 'y' or p_flag.lower() == "yes":
             main_game()
         elif p_flag.lower() == 'n' or p_flag.lower() == "no":
-            print("You are now leaving ...! ")
+            print("As you wish ...! ")
         else:
             raise ValueError
 
